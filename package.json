@@ -1,0 +1,32 @@
+{
+  "name": "node_apexlegendstrackerapp",
+  "version": "1.0.0",
+  "description": "Node_ApexLegendsTrackerApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfoafl/Node_ApexLegendsTrackerApp.git"
+  },
+  "author": "Rodolfo A. F. Leal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodolfoafl/Node_ApexLegendsTrackerApp/issues"
+  },
+  "homepage": "https://github.com/rodolfoafl/Node_ApexLegendsTrackerApp#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
